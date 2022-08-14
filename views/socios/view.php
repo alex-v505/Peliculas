@@ -13,23 +13,27 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">Nombre</th>
-                    <td></td>
-                <tr>
-                    <th scope="row">Cedula</th>
+            <tr>
+                    <th scope="row" id="soc_id">ID</th>
                     <td></td>
                 </tr>
                 <tr>
-                    <th scope="row">Direccion</th>
+                    <th scope="row" id="soc_nombre">Nombre</th>
+                    <td></td>
+                <tr>
+                    <th scope="row" id="soc_cedula">Cedula</th>
                     <td></td>
                 </tr>
                 <tr>
-                    <th scope="row">Telefono</th>
+                    <th scope="row" id="soc_direccion">Direccion</th>
                     <td></td>
                 </tr>
                 <tr>
-                    <th scope="row">Correo</th>
+                    <th scope="row" id="soc_telefono">Telefono</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row"id="soc_correo">Correo</th>
                     <td></td>
                 </tr>
             </tbody>
