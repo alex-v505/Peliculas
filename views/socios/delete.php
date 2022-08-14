@@ -5,7 +5,7 @@
         <H3>Eliminar socio</H3>
         <br><br>
         <div class="container">
-        <table class="table table-striped table-dark">
+        <table class="table">
             <thead>
                 <tr>
                     <th scope="col"></th>
@@ -15,27 +15,29 @@
             <tbody>
                 <tr>
                     <th scope="row">Nombre</th>
-                    <td>Julio Jaramillo</td>
+                    <td></td>
                 <tr>
                     <th scope="row">Cedula</th>
-                    <td>0503634974</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">Direccion</th>
-                    <td>Latacunga</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">Telefono</th>
-                    <td>0958775282</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">Correo</th>
-                    <td>jotajota@gmail.com</td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
         </div>
         
+        <button type="button" class="btn btn-danger"> <img src="bote-de-basura-abierto.png" width="30px" heigth="30px"> Eliminar</button>
+
     </div>
 
 </section>
