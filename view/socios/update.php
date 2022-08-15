@@ -45,7 +45,7 @@
             </div>
             
             <div class="col-12">
-                <button class="btn btn-primary" type="submit"><img src="../../img/update.png" alt="" width="30" height="30" >Grabar</button>
+                <br><button class="btn btn-primary" type="submit"><img src="../../img/update.png" alt="" width="30" height="30" >Grabar</button>
             </div>
         </form>
     </div>

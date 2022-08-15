@@ -2,8 +2,8 @@
 
 <section class="content">
     <div>
-        <H3>Eliminar socio</H3>
-        <br><br>
+        <H3>Datos de socio</H3>
+        <br>
         <div class="container">
         <table class="table">
             <thead>
@@ -39,8 +39,6 @@
             </tbody>
         </table>
         </div>
-        
-        <button type="button" class="btn btn-danger"> <img src="../../img/bote-de-basura-abierto.png" width="30px" heigth="30px"> Eliminar</button>
 
     </div>
 

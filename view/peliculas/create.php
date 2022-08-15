@@ -3,21 +3,35 @@
 <section class="content">
 
     <div class="container p-3">
-    <h2>Nuevo Actor/Actriz</h2>
+    <h2>Nueva Película</h2>
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-12">
-                <label for="act_input" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="act_nombre" name="act_nombre" placeholder="Ingrese el nombre de un actor/actriz" required>
+                <label for="inputNombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="pel_nombre" name="pel_nombre" placeholder="Ingrese el nombre de la película" required>
                 <div class="valid-feedback">
                     Válido!
                 </div>
+            </div>
+            
+            <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Costo</label>
+
+                <input type="number" class="form-control" id="pel_costo" name="pel_costo" placeholder="Ingrese una cantidad numérica" required>
                 <div id="inputEmail" class="invalid-feedback">
-                    Ingrese el nombre de un actor/actriz
+                    Ingrese una cantidad numérica.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputDireccion" class="form-label">Fecha de estreno</label>
+                <input type="date" class="form-control " id="pel_fecha_estreno" name="pel_fecha_estreno" placeholder="Ingrese una fecha" required>
+                <div  class="invalid-feedback">
+                    Ingrese una fecha.
                 </div>
             </div>
             
+            
             <div class="col-12">
-            <button class="btn btn-success" type="submit"><img src="../../img/save.png" alt="" width="32" height="32" >Grabar</button>
+            <br><button class="btn btn-success" type="submit"><img src="../../img/save.png" alt="" width="32" height="32" >Grabar</button>
             </div>
         </form>
     </div>

@@ -3,21 +3,21 @@
 <section class="content">
 
     <div class="container p-3">
-    <h2>Nuevo Género Cinemátografico</h2>
+    <h2>Nuevo Actor/Actriz</h2>
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-12">
-                <label for="inputNombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="gen_nombre" name="gen_nombre" placeholder="Ingrese el género cinematográfico" required>
+                <label for="act_input" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="act_nombre" name="act_nombre" placeholder="Ingrese el nombre de un actor/actriz" required>
                 <div class="valid-feedback">
                     Válido!
                 </div>
                 <div id="inputEmail" class="invalid-feedback">
-                    Ingrese un género cinematográfico.
+                    Ingrese el nombre de un actor/actriz
                 </div>
             </div>
             
             <div class="col-12">
-            <button class="btn btn-primary" type="submit"><img src="../../img/update.png" alt="" width="30" height="30" >Grabar</button>
+            <br><button class="btn btn-primary" type="submit"><img src="../../img/update.png" alt="" width="30" height="30" >Grabar</button>
             </div>
         </form>
     </div>

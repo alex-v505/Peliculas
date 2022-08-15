@@ -1,9 +1,11 @@
 <?php include '../template/header.php' ?>
 
+<?php include '../template/plugins' ?>
+<?php include '../template/dist' ?>
 <section class="content">
 
     <div class="container p-3">
-        <h2>Actualizar Alquiler</h2>
+        <h2>Nuevo Alquiler</h2>
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-6">
                 <label for="pel_input" class="form-label">Película</label>
@@ -57,7 +59,7 @@
             </div>
 
             <div class="col-12">
-            <button class="btn btn-primary" type="submit"><img src="../../img/update.png" alt="" width="30" height="30" >Grabar</button>
+            <br><button class="btn btn-success" type="submit"><img src="../../img/save.png" alt="" width="32" height="32" >Grabar</button>
             </div>
         </form>
     </div>
@@ -82,4 +84,6 @@
         })
 })()
 </script>
+<?php include '../template/plugins' ?>
+<?php include '../template/dist' ?>
 <?php include '../template/footer.php' ?>
