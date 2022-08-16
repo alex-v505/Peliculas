@@ -53,8 +53,8 @@
                         echo '<th scope="row">'.$row["soc_correo"].'</th>';
                         echo '<th scope="row">
                             <a class="text-success" href="update.php"><i class="fa-solid fa-pen"></i></a>
-                            <a href="update.php"><i class="fa-solid fa-search"></i></a>
-                            <a class="text-danger" href="update.php"><i class="fa-solid fa-trash-can"></i></a>
+                            <a href="view.php"><i class="fa-solid fa-search"></i></a>
+                            <a class="text-danger" href="delete.php"><i class="fa-solid fa-trash-can"></i></a>
                             </th>';
                       }
                     } else {
