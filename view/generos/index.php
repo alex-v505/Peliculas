@@ -36,6 +36,7 @@
                 </thead>
                 <tbody>
                   <?php
+                  //Proceso de creacion de tabla y relleno de datos de la BDD
                     if ($result->num_rows > 0) {
                       // output data of each row
                       while($row = $result->fetch_assoc()) {
@@ -44,9 +45,9 @@
                         echo '<th scope="row">'.$row["gen_nombre"].'</th>';
                         echo '<th scope="row">
                             <a class="text-success" href="update.php"><i class="fa-solid fa-pen"></i></a>
-                            <a href="update.php"><i class="fa-solid fa-search"></i></a>
-                            <a class="text-danger" href="update.php"><i class="fa-solid fa-trash-can"></i></a>
-                            </th>';
+                            <a href="view.php"><i class="fa-solid fa-search"></i></a>
+                            <a class="text-danger" href="delete.php"><i class="fa-solid fa-trash-can"></i></a>
+                        </th>';
                       }
                     } else {
                       echo "0 results";
