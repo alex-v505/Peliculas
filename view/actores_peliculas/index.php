@@ -38,6 +38,7 @@
                 </thead>
                 <tbody>
                   <?php
+                  //Proceso de creacion de tabla y relleno de datos de la BDD
                     if ($result->num_rows > 0) {
                       // output data of each row
                       while($row = $result->fetch_assoc()) {
