@@ -1,13 +1,11 @@
 <?php include '../template/header.php' ?>
 
 <?php include '../../controller/actores/index.php' ?>
-<div class='container'>
-
-    <div class="container">
-        <div class="container">
+<section class="content">
+       
             <div class="row">
                 <div class="col align-self-start">
-                    <h2>Actores Registrados</h2>
+                <h2>Actores Registrados</h2>
                 </div>
                 <div class="col align-self-center">
 
@@ -16,8 +14,8 @@
                     <button type="button" class="btn btn-success">Agregar</button>
                 </div>
             </div>
-        </div>
-    </div>
+        
+    
 
     <br>
     <div class="d-flex justify-content-center"></div>
@@ -67,9 +65,9 @@
 
     </div>
 
-</div>
-</div>
-</div>
-</div>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="https://kit.fontawesome.com/94ae563b14.js" crossorigin="anonymous"></script>
 <?php include '../template/footer.php' ?>

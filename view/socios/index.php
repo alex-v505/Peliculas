@@ -1,10 +1,7 @@
 <?php include '../template/header.php' ?>
 
 <?php include '../../controller/socios/index.php' ?>
-<div class='container'>
-
-    <div class="container">
-        <div class="container">
+<section class="content">       
             <div class="row">
                 <div class="col align-self-start">
                     <h2>Socios Registrados</h2>
@@ -16,9 +13,6 @@
                     <button type="button" class="btn btn-success">Agregar</button>
                 </div>
             </div>
-        </div>
-    </div>
-
     <br>
     <div class="d-flex justify-content-center"></div>
     <div class="col-sm-9 bg-light p-3 border">
@@ -75,9 +69,9 @@
 
     </div>
 
-</div>
-</div>
-</div>
-</div>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="https://kit.fontawesome.com/94ae563b14.js" crossorigin="anonymous"></script>
 <?php include '../template/footer.php' ?>
