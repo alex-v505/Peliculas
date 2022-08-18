@@ -9,10 +9,8 @@
                 <div class="col align-self-start">
                     <h2>Actores de Peliculas Registrados</h2>
                 </div>
-                <div class="col align-self-center">
 
-                </div>
-                <div class="col align-self-end">
+                <div class="col-4">
                     <button type="button" class="btn btn-success">Agregar</button>
                 </div>
             </div>
@@ -48,8 +46,8 @@
                         echo '<th scope="row">'.$row["pel_nombre"].'</th>';
                         echo '<th scope="row">'.$row["apl_papel"].'</th>';
                         echo '<th scope="row">
-                        <a class="text-success" href="update.php?apl_id='.$row["apl_id"].'"><i class="fa-solid fa-pen"></i></a>
-                        <a href="view.php?apl_id='.$row["apl_id"].'"><i class="fa-solid fa-search"></i></a>
+                        <a class="text-success" href="update.php"><i class="fa-solid fa-pen"></i></a>
+                        <a href="view.php"><i class="fa-solid fa-search"></i></a>
                         <a class="text-danger" href="delete.php?apl_id='.$row["apl_id"].'"><i class="fa-solid fa-trash-can"></i></a>
                         </th>';
                       }

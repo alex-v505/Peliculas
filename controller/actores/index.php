@@ -1,4 +1,5 @@
 <?php
+
     include '../../model/conectar.php';
     $sql = "SELECT * FROM actores";
     $result = $conn->query($sql);
