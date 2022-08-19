@@ -47,7 +47,7 @@
                         echo '<th scope="row">'.$row["pel_fecha_estreno"].'</th>';
                         echo '<th scope="row">
                             <a class="text-success" href="update.php"><i class="fa-solid fa-pen"></i></a>
-                            <a href="view.php"><i class="fa-solid fa-search"></i></a>
+                            <a href="view.php?pel_id='.$row["pel_id"].' "><i class="fa-solid fa-search"></i></a>
                             <a class="text-danger" href="delete.php?pel_id='.$row["pel_id"].'"><i class="fa-solid fa-trash-can"></i></a>
                             </th>';
                       }
