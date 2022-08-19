@@ -1,10 +1,13 @@
 <?php include '../template/header.php' ?>
-<?php include '../../controller/actores/delete.php'?>
+<?php include '../../controller/actores/view.php'?>
 <section class="content">
     <div>
         <H3>Datos de actor</H3>
         <br><br>
         <div class="container">
+        <?php
+                $row = $result->fetch_assoc();
+            ?>
         <table class="table">
             <thead>
                 <tr>
@@ -25,9 +28,8 @@
                 </tbody>
         </table>
         </div>
-        <form action="../../controller/actores/delete.php" method="post">
+        <form action="../../controller/actores/view.php" method="post">
             <input type="hidden" name="act_id" value="<?php echo $row['act_id'];?>">
-            <input type="submit" value="Eliminar" class="btn btn-danger">
         </form>
     </div>
 
