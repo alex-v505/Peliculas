@@ -1,10 +1,13 @@
 <?php include '../template/header.php' ?>
-
+<?php include '../../controller/generos/delete.php'?>
 <section class="content">
     <div>
         <H3>Eliminar genero</H3>
         <br><br>
         <div class="container">
+        <?php
+                $row = $result->fetch_assoc();
+            ?>
         <table class="table">
             <thead>
                 <tr>
@@ -15,17 +18,19 @@
             <tbody>
             <tr>
                     <th scope="row" id="gen_id">ID</th>
-                    <td></td>
+                    <td><?php echo $row['gen_id'];?></td>
                 </tr>
                 <tr>
                     <th scope="row" id="gen_nombre">Nombre</th>
-                    <td></td>
+                    <td><?php echo $row['gen_nombre'];?></td>
 
             </tbody>
         </table>
         </div>
-        
-        <button type="button" class="btn btn-danger"> <img src="../../img/bote-de-basura-abierto.png" width="30px" heigth="30px"> Eliminar</button>
+        <form action="../../controller/generos/delete.php" method="post">
+            <input type="hidden" name="gen_id" value="<?php echo $row['gen_id'];?>">
+            <input type="submit" value="Eliminar" class="btn btn-danger">
+        </form>
 
     </div>
 
