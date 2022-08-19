@@ -26,7 +26,7 @@
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">ID_Actor</th>
+                        <th scope="col">Actor</th>
                         <th scope="col">ID_Pelicula</th>
                         <th scope="col">Actor_Papel</th>
                         <th scope="col" >Opciones</th>

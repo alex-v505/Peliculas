@@ -26,7 +26,7 @@
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">ID_ Genero</th>
+                        <th scope="col">Genero</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Costo</th>
                         <th scope="col">Estreno</th>
@@ -41,7 +41,7 @@
                       while($row = $result->fetch_assoc()) {
                         echo '<tr>';
                         echo '<th scope="row">'.$row["pel_id"].'</th>';
-                        echo '<th scope="row">'.$row["gen_id"].'</th>';
+                        echo '<th scope="row">'.$row["gen_nombre"].'</th>';
                         echo '<th scope="row">'.$row["pel_nombre"].'</th>';
                         echo '<th scope="row">'.$row["pel_costo"].'</th>';
                         echo '<th scope="row">'.$row["pel_fecha_estreno"].'</th>';

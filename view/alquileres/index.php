@@ -28,8 +28,8 @@
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">ID_Socio</th>
-                        <th scope="col">ID_Pelicula</th>
+                        <th scope="col">Socio</th>
+                        <th scope="col">Pelicula</th>
                         <th scope="col">Fecha_Desde</th>
                         <th scope="col">Fecha_Hasta</th>
                         <th scope="col">Valor</th>
@@ -45,8 +45,8 @@
                       while($row = $result->fetch_assoc()) {
                         echo '<tr>';
                         echo '<th scope="row">'.$row["alq_id"].'</th>';
-                        echo '<th scope="row">'.$row["soc_id"].'</th>';
-                        echo '<th scope="row">'.$row["pel_id"].'</th>';
+                        echo '<th scope="row">'.$row["soc_nombre"].'</th>';
+                        echo '<th scope="row">'.$row["pel_nombre"].'</th>';
                         echo '<th scope="row">'.$row["alq_fecha_desde"].'</th>';
                         echo '<th scope="row">'.$row["alq_fecha_hasta"].'</th>';
                         echo '<th scope="row">'.$row["alq_valor"].'</th>';
