@@ -16,7 +16,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                <tr>
+                    <tr>
                         <th scope="row" id="apl_id">ID</th>
                         <td><?php echo $row['apl_id'];?></td>
                     </tr>
@@ -37,8 +37,8 @@
             </table>
         </div>
         <form action="../../controller/actores_peliculas/delete.php" method="post">
-            <input type="hidden" name="apl_id" value = "<?php echo $row['apl_id'];?>">
-            <input type = "submit" value = "Eliminar" class = "btn btn-danger">
+            <input type="hidden" name="apl_id" value="<?php echo $row['apl_id'];?>">
+            <input type="submit" value="Eliminar" class="btn btn-danger">
         </form>
         <!--<button type="button" class="btn btn-danger"> <img src="../../img/bote-de-basura-abierto.png" width="30px" heigth="30px">Eliminar</button>-->
 
