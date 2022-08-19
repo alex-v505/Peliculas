@@ -10,7 +10,7 @@
         include '../../model/conectar.php';
 
     $id = $_GET['alq_id'];
-    $sql = "SELECT a.alq_id, s.soc_nombre, p.pel_nombre, a.alq_fecha_desde, a.alq_fecha_hasta, a.alq_valor, a_alq_fecha_entrega 
+    $sql = "SELECT a.alq_id, s.soc_nombre, p.pel_nombre, a.alq_fecha_desde, a.alq_fecha_hasta, a.alq_valor, a.alq_fecha_entrega 
             FROM alquileres a, socios s, peliculas p
             WHERE a.pel_id= p.pel_id
             AND a.soc_id = s.soc_id
