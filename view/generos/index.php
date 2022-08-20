@@ -5,13 +5,13 @@
         
             <div class="row">
                 <div class="col align-self-start">
-                    <h2>Generos Registrados</h2>
+                    <h2>Géneros Registrados</h2>
                 </div>
                 <div class="col align-self-center">
 
                 </div>
                 <div class="col align-self-end">
-                    <button type="button" class="btn btn-success">Agregar</button>
+                <a href="create.php"><button type="button" class="btn btn-success">Agregar</button></a>
                 </div>
             </div>
 
@@ -40,7 +40,7 @@
                         echo '<th scope="row">'.$row["gen_id"].'</th>';
                         echo '<th scope="row">'.$row["gen_nombre"].'</th>';
                         echo '<th scope="row">
-                            <a class="text-success" href="update.php"><i class="fa-solid fa-pen"></i></a>
+                            <a class="text-success" href="update.php?gen_id='.$row["gen_id"].'"><i class="fa-solid fa-pen"></i></a>
                             <a href="view.php"><i class="fa-solid fa-search"></i></a>
                             <a class="text-danger" href="delete.php?gen_id='.$row["gen_id"].'"><i class="fa-solid fa-trash-can"></i></a>
                         </th>';
@@ -67,5 +67,5 @@
         </div>
     </div>
 </section>
-<script src="https://kit.fontawesome.com/94ae563b14.js" crossorigin="anonymous"></script>
+
 <?php include '../template/footer.php' ?>

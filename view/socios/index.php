@@ -10,7 +10,7 @@
 
                 </div>
                 <div class="col align-self-end">
-                    <button type="button" class="btn btn-success">Agregar</button>
+                <a href="create.php"><button type="button" class="btn btn-success">Agregar</button></a>
                 </div>
             </div>
     <br>
@@ -46,7 +46,7 @@
                         echo '<th scope="row">'.$row["soc_telefono"].'</th>';
                         echo '<th scope="row">'.$row["soc_correo"].'</th>';
                         echo '<th scope="row">
-                            <a class="text-success" href="update.php"><i class="fa-solid fa-pen"></i></a>
+                            <a class="text-success" href="update.php?soc_id='.$row["soc_id"].'"><i class="fa-solid fa-pen"></i></a>
                             <a href="view.php"><i class="fa-solid fa-search"></i></a>
                             <a class="text-danger" href="delete.php?soc_id='.$row["soc_id"].'"><i class="fa-solid fa-trash-can"></i></a>
                             </th>';

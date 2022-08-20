@@ -1,15 +1,15 @@
 <?php include '../template/header.php' ?>
 
 <?php include '../../controller/actores_peliculas/index.php' ?>
-<section class="content">
-       
+
+<section class="content"> 
             <div class="row">
                 <div class="col align-self-start">
-                <h2>Actores de Peliculas Registrados</h2>
+                <h2>Actores de Películas Registrados</h2>
                 </div>
 
                 <div class="col-4">
-                    <button type="button" class="btn btn-success">Agregar</button>
+                <a href="create.php"><button type="button" class="btn btn-success">Agregar</button></a>
                 </div>
             </div>
         
@@ -44,7 +44,7 @@
                         echo '<th scope="row">'.$row["pel_nombre"].'</th>';
                         echo '<th scope="row">'.$row["apl_papel"].'</th>';
                         echo '<th scope="row">
-                        <a class="text-success" href="update.php"><i class="fa-solid fa-pen"></i></a>
+                        <a class="text-success" href="update.php?apl_id='.$row["apl_id"].'"><i class="fa-solid fa-pen"></i></a>
                         <a href="view.php"><i class="fa-solid fa-search"></i></a>
                         <a class="text-danger" href="delete.php?apl_id='.$row["apl_id"].'"><i class="fa-solid fa-trash-can"></i></a>
                         </th>';

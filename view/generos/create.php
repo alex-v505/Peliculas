@@ -4,7 +4,7 @@
 
     <div class="container p-3">
     <h2>Nuevo Género Cinemátografico</h2>
-        <form class="row g-3 needs-validation" novalidate>
+        <form class="row g-3 needs-validation" action ="../../controller/generos/create.php" method = "POST" novalidate>
             <div class="col-md-12">
                 <label for="inputNombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="gen_nombre" name="gen_nombre" placeholder="Ingrese el género cinematográfico" required>
@@ -17,7 +17,7 @@
             </div>
             
             <div class="col-12">
-            <br><button class="btn btn-success" type="submit"><img src="../../img/save.png" alt="" width="32" height="32" >Grabar</button>
+            <br><button class="btn btn-success" type="submit"><i class="fa-solid fa-floppy-disk p-1"></i>Grabar</button>
             </div>
         </form>
     </div>

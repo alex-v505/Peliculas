@@ -4,7 +4,7 @@
 
     <div class="container p-3">
     <h2>Nuevo Actor/Actriz</h2>
-        <form class="row g-3 needs-validation" novalidate>
+        <form class="row g-3 needs-validation" action ="../../controller/actores/create.php" method = "POST" novalidate>
             <div class="col-md-12">
                 <label for="act_input" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="act_nombre" name="act_nombre" placeholder="Ingrese el nombre de un actor/actriz" required>
@@ -17,7 +17,7 @@
             </div>
             
             <div class="col-12">
-            <br><button class="btn btn-success" type="submit"><img src="../../img/save.png" alt="" width="32" height="32" >Grabar</button>
+            <br><button class="btn btn-success" type="submit"><i class="fa-solid fa-floppy-disk p-1"></i>Grabar</button>
             </div>
         </form>
     </div>

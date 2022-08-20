@@ -5,13 +5,13 @@
 
             <div class="row">
                 <div class="col align-self-start">
-                    <h2>Peliculas Registradas</h2>
+                    <h2>Películas Registradas</h2>
                 </div>
                 <div class="col align-self-center">
 
                 </div>
                 <div class="col align-self-end">
-                    <button type="button" class="btn btn-success">Agregar</button>
+                <a href="create.php"><button type="button" class="btn btn-success">Agregar</button></a>
                 </div>
             </div>
 
@@ -46,7 +46,7 @@
                         echo '<th scope="row">'.$row["pel_costo"].'</th>';
                         echo '<th scope="row">'.$row["pel_fecha_estreno"].'</th>';
                         echo '<th scope="row">
-                            <a class="text-success" href="update.php"><i class="fa-solid fa-pen"></i></a>
+                            <a class="text-success" href="update.php?pel_id='.$row["pel_id"].'"><i class="fa-solid fa-pen"></i></a>
                             <a href="view.php"><i class="fa-solid fa-search"></i></a>
                             <a class="text-danger" href="delete.php?pel_id='.$row["pel_id"].'"><i class="fa-solid fa-trash-can"></i></a>
                             </th>';

@@ -4,7 +4,7 @@
 
     <div class="container p-3">
     <h2>Nuevo Socio</h2>
-        <form class="row g-3 needs-validation" novalidate>
+        <form class="row g-3 needs-validation" action ="../../controller/socios/create.php" method = "POST" novalidate>
             <div class="col-md-12">
                 <label for="inputNombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="soc_nombre" name="soc_nombre" placeholder="Ingrese su nombre" required>
@@ -16,7 +16,7 @@
             <div class="col-md-6">
                 <label for="inputEmail" class="form-label">Cédula</label>
 
-                <input type="number" class="form-control" id="soc_nombre" name="soc_nombre" placeholder="Ingrese un número de cédula." required>
+                <input type="number" class="form-control" id="soc_cedula" name="soc_cedula" placeholder="Ingrese un número de cédula." required>
                 <div id="inputEmail" class="invalid-feedback">
                     Ingrese un número de cédula.
                 </div>
@@ -44,9 +44,8 @@
                 </div>
             </div>
             
-            <div class="col-12">
-                
-            <br><button class="btn btn-success" type="submit"><img src="../../img/save.png" alt="" width="32" height="32" >Grabar</button>
+            <div class="col-12">    
+            <br><button class="btn btn-success" type="submit"><i class="fa-solid fa-floppy-disk p-1"></i>Grabar</button>
             </div>
         </form>
     </div>

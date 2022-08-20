@@ -10,9 +10,10 @@
         include '../../model/conectar.php';
 
     $id = $_GET['pel_id'];
-    $sql = "SELECT p.pel_id, g.gen_nombre, p.pel_nombre, p.pel_costo, p.pel_fecha_estreno
-            FROM generos g, peliculas p
-            WHERE p.pel_id =".$id;
+    $sql = "SELECT p.pel_id, g.gen_nombre, p.pel_nombre , p.pel_costo, p.pel_fecha_estreno FROM generos g, peliculas p
+            WHERE p.gen_id = p.gen_id
+            AND p.gen_id = g.gen_id
+            AND p.pel_id = ".$id;
     $result = $conn->query($sql);
     include '../../model/desconectar.php';
 
