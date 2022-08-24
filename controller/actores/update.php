@@ -16,7 +16,7 @@
             include '../../model/conectar.php';
             $id = $_POST['act_id'];
             $act_nombre = $_POST['act_nombre'];
-            $sql = "UPDATE actores set act_nombre ='".$act_nombre."' WHERE act_id =".$id;
+            $sql = "UPDATE actores set act_nombre ='".$act_nombre."' WHERE act_id = ".$id;
             $result = $conn->query($sql);
             include '../../model/desconectar.php';
             header('Location: ../../view/actores/index.php');
